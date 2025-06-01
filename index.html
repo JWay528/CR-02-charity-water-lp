@@ -1,12 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Charity Water Landing Page</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Charity: Water - Student Campaign</title>
+  <!-- Link to your CSS file -->
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Use charity: water brand colors for background and text */
+    body {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      background: #2E9DF7; /* Brand blue */
+    }
+    .container {
+      text-align: center;
+      background: #fff;
+      padding: 24px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(46, 157, 247, 0.08);
+      border: 3px solid #FFC907; /* Brand yellow border */
+    }
+    .logo {
+      color: #FFC907; /* Brand yellow */
+      font-family: 'Avenir', Arial, sans-serif;
+      margin-bottom: 10px;
+    }
+    .intro h2 {
+      color: #2E9DF7; /* Brand blue */
+    }
+    .subtitle {
+      color: #8BD1CB; /* Light blue */
+    }
+    .main-image {
+      width: 90%;
+      max-width: 300px;
+      border-radius: 6px;
+      border: 2px solid #FFC907; /* Brand yellow */
+      margin: 10px auto;
+      display: block;
+    }
+    .cta-button {
+      display: inline-block;
+      background-color: #FFC907; /* Brand yellow */
+      color: #222;
+      padding: 12px 28px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 15px auto;
+      text-align: center;
+      font-size: 1em;
+      transition: background 0.2s;
+      border: none;
+    }
+    .cta-button:hover {
+      background-color: #2E9DF7; /* Brand blue on hover */
+      color: #fff;
+    }
+    .supporting-text {
+      color: #4FCB53; /* Brand green */
+      text-align: center;
+      margin-top: 20px;
+      font-size: 1.1em;
+    }
+  </style>
 </head>
 <body>
-    <!-- Add your HTML here -->
+  <!-- Main container for the page -->
+  <div class="container">
+    <!-- Header with the logo image -->
+    <header>
+      <!-- Logo image for charity: water -->
+      <img src="img/cw_logo.png" alt="charity: water logo" style="width:120px; display:block; margin: 0 auto 10px auto;">
+      <h1 class="logo">charity: water</h1>
+    </header>
+
+    <!-- Main content area -->
+    <main class="content">
+      <!-- Introduction section -->
+      <section class="intro">
+        <h2>This Isn’t Just a Donation. It’s a Movement</h2>
+        <p class="subtitle">
+          Be part of a generation of student changemakers fighting for global water equity.
+        </p>
+      </section>
+
+      <!-- Section with image and call to action -->
+      <section class="main-section">
+        <div class="image-text">
+          <!-- Image showing the impact of clean water -->
+          <img src="img/child-water-glasses.jpg" alt="Child holding two glasses of water" class="main-image">
+        </div>
+
+        <!-- Call to action button -->
+        <a href="#" class="cta-button">FILL A WELL 💧</a>
+
+        <!-- Supporting text -->
+        <p class="supporting-text">
+          Every drop counts. Every voice matters. <br />
+          Help bring clean water to the 663 million people who still go without. Be part of the solution.
+        </p>
+      </section>
+    </main>
+  </div>
 </body>
 </html>
